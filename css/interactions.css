@@ -1,0 +1,167 @@
+/*CCS TRANSITIONS*/
+
+nav li a:hover{
+    background: #ffdc01;
+    color: #141414;
+}
+
+nav li a{
+    transition-property: color,background;
+    transition-duration: 500ms;
+}
+
+.section-splash button:hover {
+    background: #e8483b;
+    color: #aaa;
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.8);
+}
+
+.section-splash button{
+    transition-property: color, background, box-shadow, transform;
+    transition-duration: 500ms, 500ms, 1000ms, 1000ms;
+    /*add more dimension to css transitions*/
+    transition-delay: 0s,0s, 0.25s;
+    transition-timing-function: ease-in-out;
+    /*based on easing (adding the feeling of weight)
+    cubic-bezier(_,_,_,_,_) helps customize
+    */
+}
+
+/* CCS TRANSFORM
+    scale(); --> make element bigger
+    rotate();
+    skew(); --> distorts element
+    translate(); --> moves element without disrupting the flow
+
+*/
+
+.section-splash button:hover{
+    transform: rotate(-5deg) scale(1.2) skew(2deg, 2deg) translate(0px, 10px);
+    transform-origin: 50% 100%; /*100 to the right and 100 downwardss*/ 
+}
+
+
+
+
+/**playing around*/
+#logo{
+    transition-property: color,background;
+    transition-duration: 500ms;
+}
+
+.copy button:hover{
+    background: #e8483b;
+    color: #fff;
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.8);
+}
+
+.copy button{
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    /*based on easing (adding the feeling of weight)
+    cubic-bezier(_,_,_,_,_) helps customize
+    */
+}
+
+
+/*end of playing*/
+
+/*
+CSS ANIMATION
+
+*/
+
+.section-splash .bg-char-1{
+    background-position-x: 0%; 
+}
+
+.section-splash .bg-char-2{
+    background-position-x: 100%; 
+}
+
+@keyframes char-float-1{
+    0% {background-position-x:0%;}
+    50% {background-position-x:-10%;}
+    70% {background-position-x:-15%;}
+    85% {background-position-x:-30%;}
+    100% {background-position-x: 0%; }
+}
+
+.section-splash .bg-char-1{
+    animation-name: char-float-1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes char-float-2{
+    0% {background-position-x:100%;}
+    50% {background-position-x:110%;}
+    70% {background-position-x:105%;}
+    85% {background-position-x:130%;}
+    100% {background-position-x: 100%; }
+}
+
+.section-splash .bg-char-2{
+    animation-name: char-float-2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bg-scroll{
+    0%{background-position:  0% 0%;}
+    100% {background-position: 100% 100%;}
+}
+
+.section-modes{
+    animation: bg-scroll 10s linear infinite;
+}
+
+/*play*/
+
+.boxart img:hover{
+    transform: rotate(-5deg) scale(1.5);
+    
+}
+
+.boxart img{
+    transition-duration: 500ms;
+}
+
+.section-buy{
+    animation: bg-scroll 10s linear infinite;
+}
+
+@keyframes change-color{
+    0%{text-shadow:  0 0 rgba(255,255,255,0);}
+    25% {text-shadow: -5px -5px 0 red;}
+    50% {text-shadow: -3px -3px 0 orange;}
+    100% {text-shadow: 0 0 rgba(255,255,255,0);}
+}
+
+.copy h2, h1{
+    animation: change-color 5s linear infinite;
+}
+
+
+
+.character:hover{
+    background: yellow;
+}
+
+.character{
+    transition-duration: 1s;
+}
+
+.game-mode:hover{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    
+}
+
+.game-mode{
+    transition-duration: 500ms;
+
+}

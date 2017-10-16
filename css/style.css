@@ -1,0 +1,435 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font: normal 16px/150% 'Cairo', sans-serif;
+	color: #171717;
+	line-height: 150%;
+	background: #fceb02;
+	background: #fff;
+	-webkit-font-smoothing: antialiased;
+	-webkit-appearance: none;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	color: #fceb02;
+	text-decoration: none;
+}
+
+
+	button {
+		outline: 0;
+		border: 0;
+		height: 64px;
+		font: bold 140%/64px 'Cairo', sans-serif;
+		background: #141414;
+		border-radius: 32px;
+		color: #ffdc01;
+		text-transform: uppercase;
+		padding: 0 2em;
+		cursor: pointer;
+	}
+
+
+section {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+	section .copy {
+		padding: 20em 0 8em;
+	}
+
+.section-splash {
+	background: #fff url('../images/b.png') 50% 50% ;
+	text-align: center;
+}
+
+	.section-splash .bg-char-1 {
+		background: transparent url('../images/kamao-bikko-punch.png') 50% -300px no-repeat;
+	}
+	.section-splash .bg-char-2 {
+		background: transparent url('../images/kamao-maja-punch.png') 50% 230px no-repeat;
+	}
+
+	.section-splash .copy {
+		padding: 18em 0 12em;
+	}
+
+
+header{
+	display: block;
+	width: 100%;
+	height: auto;
+    position: relative;
+    z-index: 1;
+    position: fixed;
+    top: 1em;
+}
+
+	#logo {
+		display:block;
+		width: 0;
+		height: 120px;
+		background: transparent url('../images/kamao-logo.png') 50% 50% no-repeat;
+		background-size: contain;
+		overflow: hidden;
+		padding-left: 280px;
+		margin: 0 auto -85px;
+	}
+
+	nav {
+		display: block;
+		width: 94%;
+		max-width: 1344px;
+		height: 46px;
+		border-radius: 23px;
+		background: #2b2b2b;
+		margin: 0 auto 0;
+		position: relative;
+		z-index: -1;
+	}
+		nav ul {
+			list-style: none;
+		}
+			nav ul:after{
+				content:"";
+				display: block;
+				clear: both;
+			}
+
+		nav li {
+			display: block;
+			width: 18%;
+			float: left;
+		}
+
+			nav li.nav-3 {
+				width: 28%;
+			}
+
+		nav li a {
+			color: #fff;
+			display: block;
+			line-height: 46px;
+			text-align: center;
+			font-size: 110%;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+			nav li.nav-5 a{
+				color: #ffdc01;
+			}
+
+
+
+
+
+	h1 {
+		font: normal 520%/120% 'Fugaz One', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-bottom: 0.5em;
+	}
+
+
+	.platforms {
+		list-style: none;
+		display: block;
+		margin: 2em auto;
+	}
+
+		.platforms li {
+			display: inline-block;
+			margin: 0 1em;
+			width: 0px;
+			height:30px;
+			padding-left: 40px;
+			overflow: hidden;
+			background: transparent url('../images/icon-nswitch.svg') 50% 50% no-repeat;
+			background-size: contain;
+		}
+
+			.platforms li.xbox {
+				background-image: url('../images/icon-xbox.svg');
+			}
+
+			.platforms li.nswitch {
+				background-image: url('../images/icon-nswitch.svg');
+			}
+
+			.platforms li.playstation {
+				background-image: url('../images/icon-ps.svg');
+			}
+
+
+.section-buy {
+	background: #fff url('../images/kamao-cover.png') 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.section-buy .bg-gradient {
+	background: linear-gradient(to bottom, rgba(232,65,48,0.9) 0%,rgba(255,197,67,0.9) 100%);
+}
+
+	.section-buy .copy {
+		max-width: 960px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+		.section-buy .copy:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+	.section-buy .boxart{
+		width: 26%;
+		float: left;
+		margin-right: 4em;
+		margin-bottom: 4em;
+	}
+
+		.section-buy .boxart img {
+			width: 100%;
+			height: auto;
+    		transform: scale(1.2) rotate(-6deg);
+		}
+
+
+	.section-buy h2 {
+		font: normal 240%/120% 'Fugaz One', sans-serif;
+		text-transform: uppercase;
+		margin-top: 1.5em;
+		margin-bottom: 1em;
+	}
+	.section-buy .price{
+		font: normal 240%/120% 'Fugaz One', sans-serif;
+		margin-bottom: 1em;
+
+	}
+
+		sup {
+			vertical-align: super;
+			font-size: 50%;
+			margin-left: 2px;
+		}
+
+	.section-buy button {
+		background: #ffdc01;
+		color: #141414;
+		padding: 0 4em;
+	}
+
+
+.section-gameplay {
+	background: #000 url('../images/kamao-screenshot-bg.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+}
+
+	.section-gameplay h2{
+		font: normal 240%/120% 'Fugaz One', sans-serif;
+		text-transform: uppercase;
+	}
+	.section-gameplay p{
+		font-size: 120%;
+	}
+
+	.section-gameplay .screenshot {
+		display: block;
+		max-width: 853px;
+		width: 90%;
+		height: auto;
+		margin: 2em auto;
+		position: relative;
+	}
+
+		.section-gameplay .screenshot img {
+			width: 100%;
+			height: auto;
+			box-shadow: 0px 0px 30px rgba(0,0,0,0.2);	
+		}
+
+		.section-gameplay .screenshot .button-play {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			display: block;
+			margin: -40px 0 0 -40px;
+			width: 0px;
+			height:80px;
+			padding-left: 80px;
+			overflow: hidden;
+			background: transparent url('../images/play-button.png') 50% 50% no-repeat;
+			background-size: contain;
+		}
+
+.section-modes {
+	background: #fff url('../images/pattern-stripes.png') 50% 50% ;
+}
+
+.section-modes .copy {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+	.section-modes h2 {
+		font: normal 240%/120% 'Fugaz One', sans-serif;
+		text-transform: uppercase;
+	}
+
+
+	.game-modes{
+		width: 90%;
+		margin: 2em auto 2em;
+	}
+
+			.game-modes:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+		.game-mode {
+			width: 28%;
+			float: left;
+			margin-left: 8%;
+			text-align: left;
+		}
+
+			.game-mode:first-child {
+				margin-left: 0;
+			}
+
+		.game-mode .icon-box {
+			width: 100%;
+			height: auto;
+			text-align: center;
+			padding: 1em 0;
+			background: pink;
+			margin-bottom: 1em;
+		}
+
+			.mode-single .icon-box {
+				background: linear-gradient(to bottom, #ff9902 0%, #ff6001 100%);
+			}
+			.mode-versus .icon-box {
+				background: linear-gradient(to bottom, #e84130 0%, #ffc743 100%);
+			}
+			.mode-ranked .icon-box {
+				background: linear-gradient(to right, #e84130 0%, #ffc743 100%);
+			}
+
+			.game-mode .icon-box img {
+				width: 80%;
+				height: auto;
+			}
+
+	.game-modes h3 {
+		font: normal 160%/120% 'Fugaz One', sans-serif;
+		margin-bottom: 0.3em;
+	}
+
+.section-characters {
+	position: relative;
+	overflow: hidden;
+}
+
+	.section-characters:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+
+.section-characters .character {
+	display: block;
+	float:left;
+	width: 50%;
+	background: red;
+	text-align: center;
+}
+
+	.char-bg-2 {
+	    width: 100%;
+	    height: 100%;
+	    display: block;
+	}
+
+	.section-characters .char-bikko {
+		background: linear-gradient(to bottom, rgba(255,87,73,1) 0%,rgba(255,143,65,1) 100%);
+	}
+		.char-bikko .char-bg-2 {
+			background: url('../images/kamao-bikko.png') 50% -100px no-repeat;
+		}
+
+	.section-characters .char-maja {
+		background: linear-gradient(to bottom, #59f7ff 0%, #75c3f2 100%);
+	}
+		.char-maja .char-bg-2 {
+			background: url('../images/kamao-maja.png') 50% -100px no-repeat;
+		}
+
+	.section-characters .character h2 {
+		padding-top: 400px;
+		margin-bottom: 0.5em;
+		font: normal 360%/120% 'Fugaz One', sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+
+.section-subscribe {
+	background: #141414;
+	text-align: center;
+}
+
+	.section-subscribe h2 {
+		color: #ffdc01;
+		font: normal 260%/120% 'Fugaz One', sans-serif;
+		text-transform: uppercase;
+		margin-bottom: 0.5em;
+	}
+
+	.section-subscribe input {
+		font-size: 160%;
+		max-width: 600px;
+		width: 80%;
+		line-height: 200%;
+		border: 0;
+		outline: 0;
+		border-radius: 5px;
+		text-align: center;
+		font-family: 'Cairo', sans-serif;
+		display: block;
+		margin: 0 auto 1em;
+		padding: 0.5em;
+	}
+
+			.section-subscribe input::placeholder {
+				opacity: 0.4;
+			}
+
+	.section-subscribe button {
+		background: linear-gradient(to left, #ff8f41 0%, #ff5749 100%);
+		color: #fff;
+		font-size: 180%;
+	}
+
+	footer{
+		background: #2a2a2a;
+		color: #fcfcfc; 
+		padding: 2em 5%;
+		text-align: center; 
+	}

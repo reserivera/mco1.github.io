@@ -1,0 +1,107 @@
+@media only screen and (max-width: 640px) {
+
+	.desktop, .tablet{
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+
+body {
+	font-size: 80%;
+}
+
+section .copy {
+    padding: 4em 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section-splash .copy {
+    padding: 2em 0;
+}
+
+
+	header {
+	    position: relative;
+	    top: auto;
+	}
+
+	nav {
+		display: none;
+	}
+
+		#logo {
+		    margin: 0 auto 2em;
+		    height: 70px;
+		    padding-left: 50%;
+		}
+
+	h1 {
+	    font-size: 350%;
+	    margin: 2em 0 0.3em;
+	}
+
+	.section-splash .bg-char-1 {
+		background-position: 19% -200px;
+	    background-size: 1000px;
+	}
+	.section-splash .bg-char-2 {
+	    background-position: 86% 75px;
+	    background-size: 1000px;
+	}
+
+
+.section-buy .copy {
+    padding: 5em 0;
+    text-align: center;
+}
+
+	.section-buy .boxart {
+	    float: none;
+	    width: 60%;
+	    margin: 0 auto 2em;
+	}
+
+	.section-buy .boxart img {
+		transform: scale(1) rotate(-6deg);
+	}
+
+	.section-buy h2 {
+	    font-size: 180%;
+	}
+
+.section-modes .copy {
+    width: 90%;
+}
+
+	.game-mode {
+	    width: 100%;
+	    float: none;
+	    margin: 0 auto 3em;
+	}
+
+	.game-modes .mode-text {
+		font-size: 1.3em;
+		line-height: 1.6em;
+	}
+
+.section-characters .character {
+    width: 100%;
+    float: none;
+}
+
+	.character .char-bg-2 {
+	    background-size: 90%;
+	    background-position: 50% 50%;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+}

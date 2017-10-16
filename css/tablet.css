@@ -1,0 +1,102 @@
+.tablet {
+	display:none;
+}
+
+.mobile {
+	display: none;
+}
+.desktop {
+	display: block;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.desktop {
+		display:none;
+	}
+
+
+	.tablet {
+		display:block;
+	}
+
+
+.section {
+	max-width: none;
+}
+
+
+body {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+  font-size: 80%;
+}
+
+.section-splash .bg-char-1 {
+    background-position: 20% 110%;
+}
+.section-splash .bg-char-2 {
+    background-position: 80% -100%;
+}
+
+
+section .copy {
+    padding: 12em 0 8em;
+}
+
+
+#logo {
+    padding-left: 20%;
+    margin-left: 3%;
+}
+
+	nav {
+	    margin-left: 25%;
+	    width: 73%;
+	    font: 90%;
+	}
+	nav li {
+	    width: auto;
+	    margin-left: 7%;
+	}
+	nav li a {
+	    text-align: left;
+	    font-size: 100%;
+	}
+
+	nav li.nav-3 {
+	    display: none;
+	}
+
+
+.game-modes h3 {
+	font-size: 2em;
+}
+
+.game-modes .mode-text {
+	font-size: 1.6em;
+	line-height: 1.6em;
+}
+
+
+.section-buy .copy {
+    width: 70%;
+    padding-left: 6em;
+}
+
+.section-subscribe .copy {
+    padding: 7em 0;
+}
+
+
+
+
+}
